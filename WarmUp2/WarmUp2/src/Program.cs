@@ -19,9 +19,12 @@ class WarmUp2
     static List<int> compareTriplets(List<int> a, List<int> b)
     {
 
-        int[] output = new int[2];
-        output[0] = 0;
-        output[1] = 0;
+        List<int> output = new List<int>()
+        {
+            0,
+            0
+        };
+        
 
         for (int i = 0; i < 3; i++)
         {
