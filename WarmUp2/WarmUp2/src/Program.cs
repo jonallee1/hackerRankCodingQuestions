@@ -16,7 +16,7 @@ class WarmUp2
 {
 
     // Complete the compareTriplets function below.
-    static List<int> compareTriplets(List<int> a, List<int> b)
+    static List<int> compareTriplets(List<int> a, List<int> b)//runtime O(n)
     {
 
         List<int> output = new List<int>()
