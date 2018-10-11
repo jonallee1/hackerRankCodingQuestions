@@ -27,5 +27,26 @@ class LeftRotation
 
         int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), aTemp => Convert.ToInt32(aTemp))
         ;
+
+
+        int[] output = new int[n];
+        int temp = d;
+
+        for (int i = 0; i < n-d; i++ )
+        {
+            output[i] = a[temp];
+            temp++;
+        }
+        temp = n-d;
+        for (int i = 0; i < d; i++)
+        {
+            output[temp] = a[i];
+            temp++;
+        }
+
+        foreach (var item in output)
+        {
+            Console.Write(item.ToString() + " ");
+        }
     }
 }
