@@ -31,14 +31,17 @@ class LeftRotation
 
         int[] output = new int[n];
         int temp = d;
+        
+        //Concept d-amount of left side shifted to right side
 
-        for (int i = 0; i < n-d; i++ )
+
+        for (int i = 0; i < n-d; i++ )  //setting n-d right handed values to the left side of array
         {
             output[i] = a[temp];
             temp++;
         }
         temp = n-d;
-        for (int i = 0; i < d; i++)
+        for (int i = 0; i < d; i++)     //setting d left handed values to the right side of the array
         {
             output[temp] = a[i];
             temp++;
