@@ -7,6 +7,18 @@ namespace HackerrankQuestions.src.DataStructures
     class nonDivisibleSubset
     {
 
+        private int maxsize;
+
+        public int getMaxsize()
+        {
+            return maxsize;
+        }
+
+        public void setMaxsize(int size)
+        {
+            maxsize = size;
+        }
+
         public static string OutputIntArray(int[] arr)
         {
             string arrToString = "[ ";
@@ -40,39 +52,48 @@ namespace HackerrankQuestions.src.DataStructures
             return true;
         }
         
-        public int Recursive(int maxsize, int k, int currentIndex, int[] S, List<int> list)
+        public List<int> Recursive( int k, int currentIndex, int[] S, List<int> list)
         {
-            
             for (int i = currentIndex; i < S.Length; i++)
             {
-                if (list.Count == 0 && i==0)
+
+                int temp = i;
+                if (list.Count == 0)
                 {
-                    list.Add(S[currentIndex]);
-                    Console.WriteLine(OutputIntArray(list.ToArray()));
-                
-                    maxsize = Recursive(maxsize, k, currentIndex + 1, S, list);
                     
+                    list.Add(S[i]);
+                    list = Recursive( k, temp + 1, S, list);
+                    Console.WriteLine("Removing: " + list[list.Count - 1]);
+                    list.RemoveAt(list.Count - 1);
                 }
                 else
                 {
-               
-                    if (!testFunction(currentIndex, k, list, S))
-                        {
-                        Console.WriteLine("Current Value not added");
-                            maxsize = Recursive(maxsize, k, currentIndex + 1, S, list);
-                        }
-                        else
-                        {
-                            list.Add(S[currentIndex]);
-                            Console.WriteLine(OutputIntArray(list.ToArray()));
-                            Console.ReadLine();
-                            maxsize = Recursive(maxsize, k, currentIndex + 1, S, list);
-                        }
-                        
+                    if (testFunction(i, k, list, S))
+                    {
+                        list.Add(S[i]);
+                        Console.WriteLine("-----------------------------------------------");
+                        Console.WriteLine(OutputIntArray(list.ToArray()));
+                        list = Recursive( k, i + 1, S, list);
+                        Console.WriteLine("Removing: " + list[list.Count - 1]);
+                        list.RemoveAt(list.Count - 1);
                     }
-
+                    else
+                    {
+                        Console.WriteLine("-----------------------------------------------");
+                        Console.WriteLine(OutputIntArray(list.ToArray()));
+                        list = Recursive( k, i + 1, S, list);
+                    }
                 }
 
+                Console.WriteLine("List size: " + list.Count);
+                
+            }
+
+            if (list.Count>getMaxsize())
+            {
+                setMaxsize(list.Count);
+            }
+            
 
             
             return list;
@@ -81,10 +102,12 @@ namespace HackerrankQuestions.src.DataStructures
 
         public static int nonDivisibleSubsetFunction(int k, int[] S)
         {
+            
             nonDivisibleSubset non = new nonDivisibleSubset(); 
-            int maxsize = 0;
+            
             List<int> temp = new List<int>();
-            maxsize = non.Recursive(k, 0, S, temp);
+            non.setMaxsize(0);
+            non.Recursive(k, 0, S, temp);
             return 0;
         }
 
