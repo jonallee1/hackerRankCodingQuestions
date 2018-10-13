@@ -11,7 +11,7 @@ namespace HackerrankQuestions.src.DataStructures
          public int equalStacks(int[] h1, int[] h2, int[] h3)
         {
             //initalizing stacks from arrays
-            EqualStacks stacks = new EqualStacks();
+            
             Array.Reverse(h1);
             Array.Reverse(h2);
             Array.Reverse(h3);

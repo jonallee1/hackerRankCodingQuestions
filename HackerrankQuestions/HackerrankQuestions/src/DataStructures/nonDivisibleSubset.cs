@@ -100,14 +100,88 @@ namespace HackerrankQuestions.src.DataStructures
         }
 
 
+        public static int optimizedDivisible(int k, int[] S)
+        {
+            int[] modulusArr = new int[k];
+            Console.WriteLine("-----------------------------------");
+
+            Console.WriteLine("Original Array: ");
+            Console.WriteLine(OutputIntArray(S));
+            for (int i = 0; i < S.Length; i++)
+            {
+                modulusArr[(S[i]) % k] = modulusArr[(S[i]) % k] + 1;
+               
+            }
+            Console.WriteLine("-----------------------------------");
+
+            Console.WriteLine("Modulus Array: ");
+            Console.WriteLine(OutputIntArray(modulusArr));
+            Console.WriteLine("-----------------------------------");
+            if (modulusArr[0]>1)
+            {
+                modulusArr[0] = 1;
+            }
+            if (k%2 == 0)
+            {
+                if (modulusArr[k/2] > 1)
+                {
+                    modulusArr[k / 2] = 1;
+                }
+            }
+
+            double size = modulusArr.Length / 2;
+          
+            for (int i = 0; i < modulusArr.Length; i++)
+            {
+                if (i == 0)
+                {
+
+                }
+                else if (k%2==0 && i == k/2)
+                {
+
+                }
+                else if (modulusArr[i]>modulusArr[k-i])
+                {
+                    modulusArr[k - i] = 0;
+                }
+                else if (modulusArr[i]<modulusArr[k-i])
+                {
+                    modulusArr[i] = 0;
+                }
+                else if (modulusArr[i] == modulusArr[k - i])
+                {
+                    modulusArr[k - i] = 0;
+                }
+            }
+
+            int count = 0;
+
+            Console.WriteLine(OutputIntArray(modulusArr));
+
+            for (int i = 0; i < modulusArr.Length; i++)
+            {
+                count = count + modulusArr[i];
+            }
+
+            return count;
+
+
+        }
+
+
+
+
         public static int nonDivisibleSubsetFunction(int k, int[] S)
         {
             
-            nonDivisibleSubset non = new nonDivisibleSubset(); 
-            
-            List<int> temp = new List<int>();
+            nonDivisibleSubset non = new nonDivisibleSubset();
+
+            /*List<int> temp = new List<int>();
             non.setMaxsize(0);
-            non.Recursive(k, 0, S, temp);
+            non.Recursive(k, 0, S, temp);*/
+
+            Console.WriteLine(optimizedDivisible(k, S));
             return 0;
         }
 

@@ -8,9 +8,10 @@ namespace HackerrankQuestions
         
         static void Main(string[] args)
         {
-            /*int[] arr = new int[] { 19, 10, 12, 10, 24, 25, 22 };
-            nonDivisibleSubset.nonDivisibleSubsetFunction(4, arr);*/
-            int[] arr1 = new int[]
+            //int[] arr = new int[] { 19, 10, 12, 10, 24, 25, 22 };
+            int[] arr = new int[] {1,7,2,4 };
+            nonDivisibleSubset.nonDivisibleSubsetFunction(3, arr);
+            /*int[] arr1 = new int[]
             {
                 1,1,1,1,2
             };
@@ -26,7 +27,7 @@ namespace HackerrankQuestions
             EqualStacks stacks = new EqualStacks();
 
 
-           Console.WriteLine(stacks.equalStacks(arr1, arr2, arr3));
+           Console.WriteLine(stacks.equalStacks(arr1, arr2, arr3));*/
             Console.ReadLine();
         }
     }
