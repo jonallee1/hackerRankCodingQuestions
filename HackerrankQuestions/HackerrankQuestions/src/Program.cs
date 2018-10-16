@@ -26,11 +26,28 @@ namespace HackerrankQuestions
             //array2D[2] = new int[] { 1, 2, 4 };
             //sa.surfaceArea(array2D, 3, 3);
 
-            Time_InWords tiw = new Time_InWords();
-            Console.WriteLine(tiw.timeInWords(12, 34));
-            Console.WriteLine(tiw.timeInWords(1, 34));
-            Console.WriteLine(tiw.timeInWords(12, 15));
-            Console.WriteLine(tiw.timeInWords(5, 45));
+            //Time_InWords tiw = new Time_InWords();
+            //Console.WriteLine(tiw.timeInWords(12, 34));
+            //Console.WriteLine(tiw.timeInWords(1, 34));
+            //Console.WriteLine(tiw.timeInWords(12, 15));
+            //Console.WriteLine(tiw.timeInWords(5, 45));
+
+            String[] mainGrid = new String[4];
+
+            mainGrid[0] = "123456";
+            mainGrid[1] = "567890";
+            mainGrid[2] = "234567";
+            mainGrid[3] = "194729";
+            
+
+
+            String[] miniGrid = new String[2];
+            miniGrid[0] = "34";
+            miniGrid[1] = "78";
+          
+
+
+            Console.WriteLine(TheGridSearch.gridSearch(mainGrid, miniGrid));
             /*int[] arr1 = new int[]
             {
                 1,1,1,1,2
