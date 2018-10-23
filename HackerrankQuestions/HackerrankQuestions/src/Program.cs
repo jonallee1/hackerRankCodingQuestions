@@ -32,8 +32,9 @@ namespace HackerrankQuestions
             //Console.WriteLine(tiw.timeInWords(12, 15));
             //Console.WriteLine(tiw.timeInWords(5, 45));
             //Console.WriteLine(SherlockAndTheValidString.isValid("aabbc"));
-            Console.WriteLine(CommonChild.commonChild("WEWOUCUIDGCGTRMEZEPXZFEJWISRSBBSYXAYDFEJJDLEBVHHKS", "FDAGCXGKCTKWNECHMRXZWMLRYUCOCZHJRRJBOAJOQJZZVUYXIC"));
-           // String[] mainGrid = new String[4];
+            //Console.WriteLine(CommonChild.commonChild("WEWOUCUIDGCGTRMEZEPXZFEJWISRSBBSYXAYDFEJJDLEBVHHKS", "FDAGCXGKCTKWNECHMRXZWMLRYUCOCZHJRRJBOAJOQJZZVUYXIC"));
+            SherlockAndAnagrams.sherlockAndAnagrams("cdcd");
+            // String[] mainGrid = new String[4];
 
            // mainGrid[0] = "123456";
             //mainGrid[1] = "567890";
