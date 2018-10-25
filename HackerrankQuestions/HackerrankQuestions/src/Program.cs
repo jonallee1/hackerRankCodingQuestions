@@ -33,23 +33,34 @@ namespace HackerrankQuestions
             //Console.WriteLine(tiw.timeInWords(5, 45));
             //Console.WriteLine(SherlockAndTheValidString.isValid("aabbc"));
             //Console.WriteLine(CommonChild.commonChild("WEWOUCUIDGCGTRMEZEPXZFEJWISRSBBSYXAYDFEJJDLEBVHHKS", "FDAGCXGKCTKWNECHMRXZWMLRYUCOCZHJRRJBOAJOQJZZVUYXIC"));
-            SherlockAndAnagrams.sherlockAndAnagrams("cdcd");
+            // SherlockAndAnagrams.sherlockAndAnagrams("cdcd");
+            //SparseArrays.matchingStrings();
             // String[] mainGrid = new String[4];
+            node test = new node(47);
 
-           // mainGrid[0] = "123456";
+            int[] arr = new int[] { 2, 40, 20, 38, 30, 14, 28, 10, 16, 19, 44, 39, 27, 7, 9, 31, 12, 43, 21, 5, 41, 34, 49, 13, 33, 3, 4, 25, 22, 29, 15, 32, 35, 6, 24, 23, 26, 1, 11, 42, 36, 37, 17, 18, 8, 45, 48, 50, 46 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                TreeTopView.Insert(test, arr[i]);
+            }
+           
+            TreeTopView.topView(test);
+           
+
+            // mainGrid[0] = "123456";
             //mainGrid[1] = "567890";
             //mainGrid[2] = "234567";
             //mainGrid[3] = "194729";
-            
 
 
-           // String[] miniGrid = new String[2];
+
+            // String[] miniGrid = new String[2];
             //miniGrid[0] = "34";
-          //  miniGrid[1] = "78";
-          
+            //  miniGrid[1] = "78";
 
 
-           // Console.WriteLine(TheGridSearch.gridSearch(mainGrid, miniGrid));
+
+            // Console.WriteLine(TheGridSearch.gridSearch(mainGrid, miniGrid));
             /*int[] arr1 = new int[]
             {
                 1,1,1,1,2
