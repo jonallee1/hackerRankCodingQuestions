@@ -36,7 +36,7 @@ namespace HackerrankQuestions
             // SherlockAndAnagrams.sherlockAndAnagrams("cdcd");
             //SparseArrays.matchingStrings();
             // String[] mainGrid = new String[4];
-            node test = new node(47);
+            /*node test = new node(47);
 
             int[] arr = new int[] { 2, 40, 20, 38, 30, 14, 28, 10, 16, 19, 44, 39, 27, 7, 9, 31, 12, 43, 21, 5, 41, 34, 49, 13, 33, 3, 4, 25, 22, 29, 15, 32, 35, 6, 24, 23, 26, 1, 11, 42, 36, 37, 17, 18, 8, 45, 48, 50, 46 };
             for (int i = 0; i < arr.Length; i++)
@@ -44,8 +44,16 @@ namespace HackerrankQuestions
                 TreeTopView.Insert(test, arr[i]);
             }
            
-            TreeTopView.topView(test);
-           
+            TreeTopView.topView(test);*/
+
+            int[][] array2D = new int[4][];
+            array2D[0] = new int[] { 1, 1, 0, 0};
+            array2D[1] = new int[] { 0, 1, 1, 0 };
+            array2D[2] = new int[] { 0, 0, 1, 0 };
+            array2D[3] = new int[] { 1, 0, 0, 0 };
+           Console.WriteLine( ConnectedCellsinaGrid.connectedCell(array2D, 4, 4));
+
+
 
             // mainGrid[0] = "123456";
             //mainGrid[1] = "567890";
