@@ -7,28 +7,28 @@ namespace HackerrankQuestions.src.DataStructures
     class IsThisaBST
     {
 
-        public static void InOrder(Vector<Integer> arr, Node root)
+        public static void InOrder(List<int> arr, node root)
         {
 
 
             if (root != null)
             {
-                InOrder(arr, root.left);
-                arr.addElement(root.data);
-                InOrder(arr, root.right);
+                InOrder(arr, root.Left);
+                arr.Add(root.data);
+                InOrder(arr, root.Right);
 
 
 
             }
         }
 
-        boolean checkBST(Node root)
+        bool checkBST(node root)
         {
-            Vector<Integer> arr = new Vector();
+            List<int> arr = new List<int>();
             InOrder(arr, root);
-            for (int i = 0; i < arr.size() - 1; i++)
+            for (int i = 0; i < arr.Count - 1; i++)
             {
-                if (arr.get(i) >= arr.get(i + 1))
+                if (arr[i] >= arr[i+1])
                 {
                     return false;
                 }

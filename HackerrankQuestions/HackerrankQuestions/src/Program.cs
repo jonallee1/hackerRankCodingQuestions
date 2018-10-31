@@ -46,13 +46,15 @@ namespace HackerrankQuestions
            
             TreeTopView.topView(test);*/
 
-            int[][] array2D = new int[4][];
-            array2D[0] = new int[] { 1, 1, 0, 0};
-            array2D[1] = new int[] { 0, 1, 1, 0 };
-            array2D[2] = new int[] { 0, 0, 1, 0 };
-            array2D[3] = new int[] { 1, 0, 0, 0 };
-           Console.WriteLine( ConnectedCellsinaGrid.connectedCell(array2D, 4, 4));
+            //int[][] array2D = new int[4][];
+            //array2D[0] = new int[] { 1, 1, 0, 0};
+            // array2D[1] = new int[] { 0, 1, 1, 0 };
+            // array2D[2] = new int[] { 0, 0, 1, 0 };
+            // array2D[3] = new int[] { 1, 0, 0, 0 };
+            //Console.WriteLine( ConnectedCellsinaGrid.connectedCell(array2D, 4, 4));
 
+            int[] arr = new int[] {3,1,2};
+           Console.WriteLine( LilysHomework.lilysHomework(arr));
 
 
             // mainGrid[0] = "123456";
