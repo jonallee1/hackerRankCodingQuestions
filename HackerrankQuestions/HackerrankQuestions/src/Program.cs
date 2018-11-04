@@ -53,9 +53,10 @@ namespace HackerrankQuestions
             // array2D[3] = new int[] { 1, 0, 0, 0 };
             //Console.WriteLine( ConnectedCellsinaGrid.connectedCell(array2D, 4, 4));
 
-            int[] arr = new int[] {3,1,2};
-           Console.WriteLine( LilysHomework.lilysHomework(arr));
+            //int[] arr = new int[] {3,1,2};
+            //Console.WriteLine( LilysHomework.lilysHomework(arr));
 
+            Console.WriteLine(BiggerisGreater.biggerIsGreater("zedawdvyyfumwpupuinbdbfndyehircmylb"));
 
             // mainGrid[0] = "123456";
             //mainGrid[1] = "567890";
