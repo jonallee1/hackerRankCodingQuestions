@@ -56,7 +56,7 @@ namespace HackerrankQuestions
             //int[] arr = new int[] {3,1,2};
             //Console.WriteLine( LilysHomework.lilysHomework(arr));
 
-            Console.WriteLine(BiggerisGreater.biggerIsGreater("zedawdvyyfumwpupuinbdbfndyehircmylb"));
+            //Console.WriteLine(BiggerisGreater.biggerIsGreater("zedawdvyyfumwpupuinbdbfndyehircmylb"));
 
             // mainGrid[0] = "123456";
             //mainGrid[1] = "567890";
@@ -64,7 +64,7 @@ namespace HackerrankQuestions
             //mainGrid[3] = "194729";
 
 
-
+            // Solution
             // String[] miniGrid = new String[2];
             //miniGrid[0] = "34";
             //  miniGrid[1] = "78";
@@ -86,10 +86,38 @@ namespace HackerrankQuestions
                1,3,1
           };
             EqualStacks stacks = new EqualStacks();
-
+            
 
            Console.WriteLine(stacks.equalStacks(arr1, arr2, arr3));*/
-            Console.ReadLine();
+
+
+            /*Solution queue = new Solution();
+            int numqueue = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < numqueue; i++)
+            {
+                string[] tokens = Console.ReadLine().Split();
+                if (tokens.Length==1)
+                {
+                    int a = int.Parse(tokens[0]);
+                    if (a == 2)
+                    {
+                        queue.dequeue();
+                    }
+                    else if (a == 3)
+                    {
+                        Console.WriteLine(queue.peek());
+                    }
+                }
+                else
+                {
+                    int a = int.Parse(tokens[0]);
+                    int b = int.Parse(tokens[1]);
+                    queue.enqueue(b);
+
+                }*/
+            SimpleTextEditor t = new SimpleTextEditor();
+
+            
         }
     }
 }
