@@ -115,9 +115,23 @@ namespace HackerrankQuestions
                     queue.enqueue(b);
 
                 }*/
-            SimpleTextEditor t = new SimpleTextEditor();
-
-            
+            //SimpleTextEditor t = new SimpleTextEditor();
+            int[] arr = new int[100000];
+            /*for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == 50000)
+                {
+                    arr[i] = 0;
+                }
+                else
+                {
+                    arr[i] = 1000000000;
+                }
+            }*/
+            Console.WriteLine(FindMaxIndexProduct.solve(new int[] { 0,1,0,1,2,3,4,5, 1,1,1,1,1,1 }
+              ));
+          
+           Console.ReadLine();
         }
     }
 }
