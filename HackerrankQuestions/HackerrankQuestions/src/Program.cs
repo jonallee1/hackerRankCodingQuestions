@@ -116,7 +116,7 @@ namespace HackerrankQuestions
 
                 }*/
             //SimpleTextEditor t = new SimpleTextEditor();
-            int[] arr = new int[100000];
+            // int[] arr = new int[100000];
             /*for (int i = 0; i < arr.Length; i++)
             {
                 if (i == 50000)
@@ -128,9 +128,17 @@ namespace HackerrankQuestions
                     arr[i] = 1000000000;
                 }
             }*/
-            Console.WriteLine(FindMaxIndexProduct.solve(new int[] { 0,1,0,1,2,3,4,5, 1,1,1,1,1,1 }
-              ));
-          
+            //Console.WriteLine(FindMaxIndexProduct.solve(new int[] { 0,1,0,1,2,3,4,5, 1,1,1,1,1,1 }
+            // ));
+            long[][] gridland = new long[4][];
+            
+            gridland[0] = new long[3] { 1,1,3 };
+            gridland[1] = new long[3] { 2,2,2 }; 
+            gridland[2] = new long[3] { 3,1,6 };
+            gridland[3] = new long[3] { 3, 6, 6 };
+
+
+            Console.WriteLine(gridlandmetro.gridlandMetro(3,7,4, gridland));
            Console.ReadLine();
         }
     }
